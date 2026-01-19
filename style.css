@@ -4,7 +4,15 @@
     box-sizing: border-box;
 }
 
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100dvh; /* Garante que o body ocupe a tela toda */
+    overflow-x: hidden;
+}
+
 .back {
+    flex: 1;
     margin: 0;
     width: 100vw;
     height: 100vh;
@@ -21,13 +29,15 @@
     display: flex;
     justify-content: center; /* Centraliza horizontalmente */
     align-items: center;
+    position: relative;
 }
 .back2 {
+    flex: 1;
     margin: 0;
     width: 100vw;
     height: 100vh;
     background-image: url("bg2.png");
-    
+    position: relative;
     /* Faz a imagem cobrir todo o espaço disponível */
     background-size: cover; 
     
@@ -42,6 +52,7 @@
     flex-direction: column;
 }
 .back3 {
+    flex: 1;
     margin: 0;
     width: 100vw;
     height: 100vh;
@@ -58,6 +69,7 @@
     display: flex;
     align-items: center;
     justify-content: center; /* Centraliza horizontalmente */
+    position: relative;
 }
 
 .selo {
@@ -102,4 +114,30 @@
 
 .backbutton i {
     color: rgb(123, 20, 62);
+}
+
+
+
+
+/* Footer */
+/* Estilo da Barra Branca */
+.barra-footer {
+    width: 100%;
+    background-color: white; /* A barra branca que você pediu */
+    padding: 10px 0;
+    text-align: center;
+    font-family: 'CMUSerifRoman', serif;
+    font-size: 11px;
+    color: #333;
+    border-top: 1px solid #eee; /* Uma linha bem fininha para separar */
+    display: flex;
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.barra-footer a {
+    color: rgb(123, 20, 62);
+    text-decoration: none;
+    font-weight: bold;
 }
